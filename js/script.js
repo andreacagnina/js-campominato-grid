@@ -1,11 +1,21 @@
+function CreaUnQuadrato() {
+    let square = document.createElement('div');
+    square.className = ('content')
+
+    return square;
+}
+
 const contenitore = document.getElementById('container');
 
 for (let i = 1; i < 101; i++) {
-    let square = document.createElement('div');
+    let selSquare = CreaUnQuadrato();
 
-    square.className = ('content')
+    selSquare = document.addEventListener('click' function () {
+        this
 
-    square.innerText = i;
-    contenitore.append(square);
+    })
+
+    selSquare.innerText = i;
+    contenitore.append(selSquare);
 }
 
