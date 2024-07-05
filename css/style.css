@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+#btn_start {
+    padding: 10px;
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    width: calc(100%/10);
+}
+
+.content {
+    color: white;
+    background-color: gray;
+    border: 1px solid white;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

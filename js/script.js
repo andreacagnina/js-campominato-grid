@@ -1,6 +1,7 @@
 document.getElementById('btn_start').addEventListener('click', function () {
 
-    for (let i = 1; i < 100; i++) {
+
+    for (let i = 1; i < 101; i++) {
 
         let row = document.querySelector('.row');
         let col = document.createElement('div');
@@ -8,7 +9,8 @@ document.getElementById('btn_start').addEventListener('click', function () {
 
         col.className = 'col-1';
 
-        cont.className += 'content border border-black d-flex justify-content-center align-items-center bg-dark w-100 my-2 ratio ratio-1x1 text-white';
+
+        cont.className += 'content';
 
 
         console.log(col)
@@ -17,8 +19,6 @@ document.getElementById('btn_start').addEventListener('click', function () {
 
         cont.innerText = (i)
 
-        let first = document.querySelector('.col-1');
-        first.className += ' offset-2';
 
     }
 });
