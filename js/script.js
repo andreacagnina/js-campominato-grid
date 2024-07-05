@@ -1,22 +1,26 @@
-function CreaUnQuadrato() {
-    let square = document.createElement('div');
-    square.className = ('content')
+document.getElementById('btn_start').addEventListener('click', function () {
 
-    return square;
-}
+    function CreaUnQuadrato() {
+        let square = document.createElement('div');
+        square.className = ('content')
 
-const contenitore = document.getElementById('container');
+        return square;
+    }
 
-for (let i = 1; i < 101; i++) {
-    let selSquare = CreaUnQuadrato();
 
-    selSquare.addEventListener('click', function () {
-        this.className += (' bg_cel');
-        console.log(i);
+    const contenitore = document.getElementById('container');
 
-    });
 
-    selSquare.innerText = i;
-    contenitore.append(selSquare);
-}
+    for (let i = 1; i < 101; i++) {
+        let selSquare = CreaUnQuadrato();
 
+        selSquare.addEventListener('click', function () {
+            this.className += (' bg_cel');
+            console.log(i);
+
+        });
+
+        selSquare.innerText = i;
+        contenitore.append(selSquare);
+    };
+});

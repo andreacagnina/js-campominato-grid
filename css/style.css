@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-header {
-    padding: 20px;
-    text-align: center;
-}
-
 #btn_start {
     padding: 10px;
     background-color: cadetblue;
@@ -17,7 +12,8 @@ header {
     border-radius: 10px;
 }
 
-.container {
+.container,
+header {
     max-width: 900px;
     margin: 30px auto;
     display: flex;
