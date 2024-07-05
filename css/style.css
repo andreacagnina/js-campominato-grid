@@ -35,3 +35,8 @@ header {
     justify-content: center;
     align-items: center;
 }
+
+.bg_cel {
+    background-color: cadetblue;
+
+}

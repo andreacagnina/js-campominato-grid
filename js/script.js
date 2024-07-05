@@ -10,10 +10,11 @@ const contenitore = document.getElementById('container');
 for (let i = 1; i < 101; i++) {
     let selSquare = CreaUnQuadrato();
 
-    selSquare = document.addEventListener('click' function () {
-        this
+    selSquare.addEventListener('click', function () {
+        this.className += (' bg_cel');
+        console.log(i);
 
-    })
+    });
 
     selSquare.innerText = i;
     contenitore.append(selSquare);
