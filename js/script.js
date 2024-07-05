@@ -1,6 +1,11 @@
-let container = document.getElementsByClassName('container')
-console.log(container)
+const contenitore = document.getElementById('container');
 
-function createSquare() {
-    let currentElement = document.createElement('div')
+for (let i = 1; i < 101; i++) {
+    let square = document.createElement('div');
+
+    square.className = ('content')
+
+    square.innerText = i;
+    contenitore.append(square);
 }
+
