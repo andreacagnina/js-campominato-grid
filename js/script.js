@@ -1,4 +1,6 @@
 document.getElementById('btn_start').addEventListener('click', function () {
+    const contenitore = document.getElementById('container');
+    contenitore.innerHTML = '';
 
     function CreaUnQuadrato() {
         let square = document.createElement('div');
@@ -6,10 +8,6 @@ document.getElementById('btn_start').addEventListener('click', function () {
 
         return square;
     }
-
-
-    const contenitore = document.getElementById('container');
-
 
     for (let i = 1; i < 101; i++) {
         let selSquare = CreaUnQuadrato();

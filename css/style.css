@@ -36,3 +36,7 @@ header {
     background-color: cadetblue;
 
 }
+
+.d-none {
+    display: none;
+}

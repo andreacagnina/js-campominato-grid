@@ -21,3 +21,10 @@ conferisco un progressivo da mostrare all'interno del div
 creo un altro evento click richiamando la mia col
 aggiungo una classe bg per colorare
 stampo un messaggio in console dell'indice appartenente
+
+        <select class="form-control" name="menu" id="age">
+            <option value="">-Seleziona la difficoltà-</option>
+            <option value="1">Livello 1</option>
+            <option value="2">Livello 2</option>
+            <option value="3">Livello 3</option>
+        </select>
