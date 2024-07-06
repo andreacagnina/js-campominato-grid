@@ -36,3 +36,8 @@ header {
     background-color: cadetblue;
 
 }
+
+select {
+    margin-left: 20px;
+    border-radius: 10px;
+}
