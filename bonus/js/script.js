@@ -2,6 +2,9 @@ document.getElementById('btn_start').addEventListener('click', function () {
     const contenitore = document.getElementById('container');
     contenitore.innerHTML = '';
 
+    let livello = document.getElementById('level').value;
+    console.log(livello)
+
     function CreaUnQuadrato() {
         let square = document.createElement('div');
         square.className = ('content')
