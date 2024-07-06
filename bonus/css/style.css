@@ -14,7 +14,7 @@
 
 .container,
 header {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 30px auto;
     display: flex;
     flex-wrap: wrap;
@@ -22,7 +22,6 @@ header {
 
 
 .content {
-    width: calc(100%/10);
     aspect-ratio: 1/1;
     color: white;
     background-color: gray;
@@ -40,4 +39,16 @@ header {
 select {
     margin-left: 20px;
     border-radius: 10px;
+}
+
+.width10 {
+    width: calc(100%/10);
+}
+
+.width9 {
+    width: calc(100%/9);
+}
+
+.width7 {
+    width: calc(100%/7);
 }

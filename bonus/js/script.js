@@ -7,11 +7,41 @@ document.getElementById('btn_start').addEventListener('click', function () {
 
     if (livello == 1) {
 
-    }
-    else if (livello == 2) {
+        for (let i = 1; i < 101; i++) {
+            let selSquare = CreaUnQuadrato();
+
+            selSquare.addEventListener('click', function () {
+                this.className += (' bg_cel');
+                console.log(i);
+            });
+            selSquare.innerText = i;
+            contenitore.append(selSquare);
+        };
 
     }
+    else if (livello == 2) {
+        for (let i = 1; i < 82; i++) {
+            let selSquare = CreaUnQuadrato();
+            selSquare.classList.replace('width10', 'width9');
+            selSquare.addEventListener('click', function () {
+                this.className += (' bg_cel');
+                console.log(i);
+            });
+            selSquare.innerText = i;
+            contenitore.append(selSquare);
+        };
+    }
     else if (livello == 3) {
+        for (let i = 1; i < 50; i++) {
+            let selSquare = CreaUnQuadrato();
+            selSquare.classList.replace('width10', 'width7');
+            selSquare.addEventListener('click', function () {
+                this.className += (' bg_cel');
+                console.log(i);
+            });
+            selSquare.innerText = i;
+            contenitore.append(selSquare);
+        };
 
     }
 
@@ -21,47 +51,10 @@ document.getElementById('btn_start').addEventListener('click', function () {
 
     function CreaUnQuadrato() {
         let square = document.createElement('div');
-        square.className = ('content')
+        square.className = ('content width10');
         return square;
+
     }
 
-    for (let i = 1; i < 101; i++) {
-        let selSquare = CreaUnQuadrato();
 
-        selSquare.addEventListener('click', function () {
-            this.className += (' bg_cel');
-            console.log(i);
-
-        });
-
-
-        selSquare.innerText = i;
-        contenitore.append(selSquare);
-    };
-    for (let i = 1; i < 82; i++) {
-        let selSquare = CreaUnQuadrato();
-
-        selSquare.addEventListener('click', function () {
-            this.className += (' bg_cel');
-            console.log(i);
-
-        });
-
-
-        selSquare.innerText = i;
-        contenitore.append(selSquare);
-    };
-    for (let i = 1; i < 50; i++) {
-        let selSquare = CreaUnQuadrato();
-
-        selSquare.addEventListener('click', function () {
-            this.className += (' bg_cel');
-            console.log(i);
-
-        });
-
-
-        selSquare.innerText = i;
-        contenitore.append(selSquare);
-    };
 });
