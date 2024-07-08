@@ -1,3 +1,9 @@
+function CreaUnQuadrato() {
+    let square = document.createElement('div');
+    square.className = ('content width10');
+    return square;
+}
+
 document.getElementById('btn_start').addEventListener('click', function () {
     const contenitore = document.getElementById('container');
     contenitore.innerHTML = '';
@@ -42,17 +48,6 @@ document.getElementById('btn_start').addEventListener('click', function () {
             selSquare.innerText = i;
             contenitore.append(selSquare);
         };
-
-    }
-
-
-
-
-
-    function CreaUnQuadrato() {
-        let square = document.createElement('div');
-        square.className = ('content width10');
-        return square;
 
     }
 

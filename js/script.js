@@ -4,6 +4,7 @@ document.getElementById('btn_start').addEventListener('click', function () {
 
     function CreaUnQuadrato() {
         let square = document.createElement('div');
+        let col = document.createElement('div');
         square.className = ('content')
 
         return square;
